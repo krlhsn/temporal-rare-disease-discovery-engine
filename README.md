@@ -171,10 +171,6 @@ The following are possible future research-development directions, not current c
 
 The built-in data, analysis rules, and tests are included in this repository. The JSON export records the version, method descriptions, feature observations, candidate pairs, hypotheses, and limitations so a demonstration run can be inspected later.
 
-## Development transparency
-
-The project concept, research direction, and functional requirements were developed by **Kamrul Hassan**. ChatGPT was used as a coding assistant to help draft and refine parts of the implementation and documentation. The author reviewed the project direction and ran the Code in Place prototype; this GitHub edition includes automated tests for ongoing verification.
-
 ## Author
 
 **Kamrul Hassan**  
