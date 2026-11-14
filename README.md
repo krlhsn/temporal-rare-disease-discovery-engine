@@ -43,53 +43,53 @@ TRDDE represents observations as feature identifiers and onset-age intervals. It
 
 Run the interactive program:
 
-\`\`\`bash
+```bash
 python main.py
-\`\`\`
+```
 
 Run a dataset integrity check:
 
-\`\`\`bash
+```bash
 python main.py --validate
-\`\`\`
+```
 
 Print the ranked cohort summary:
 
-\`\`\`bash
+```bash
 python main.py --summary
-\`\`\`
+```
 
 Export a JSON report to the default filename:
 
-\`\`\`bash
+```bash
 python main.py --export
-\`\`\`
+```
 
 Choose a custom report path:
 
-\`\`\`bash
+```bash
 python main.py --export reports/trdde-report.json
-\`\`\`
+```
 
 Run the automated test suite:
 
-\`\`\`bash
+```bash
 python -m unittest discover -s tests -v
-\`\`\`
+```
 
 ## How the prototype ranks profile pairs
 
 ### 1. Feature representation
 
-Each fictional profile contains feature IDs and an illustrative onset-age interval. IDs beginning with \`SYN-\` are local demonstration identifiers. They are **not** Human Phenotype Ontology (HPO) identifiers.
+Each fictional profile contains feature IDs and an illustrative onset-age interval. IDs beginning with `SYN-` are local demonstration identifiers. They are **not** Human Phenotype Ontology (HPO) identifiers.
 
 ### 2. Inverse-frequency weighted Jaccard similarity
 
-Features that occur in fewer profiles receive higher cohort-relative weights. For profile feature sets \(A\) and \(B\), the weighted Jaccard score is:
+Features that occur in fewer profiles receive higher cohort-relative weights. For profile feature sets $A$ and $B$, the weighted Jaccard score is:
 
-\[
+$
 J_w(A,B)=\frac{\sum_{f\in A\cap B}w_f}{\sum_{f\in A\cup B}w_f}
-\]
+$
 
 This measures weighted feature-set overlap in the supplied demonstration cohort. It is not a clinical importance score.
 
@@ -101,11 +101,11 @@ For each feature shared by a pair, the prototype checks whether the two illustra
 
 The current ranking combines the two quantities:
 
-\[
+$
 S=0.70J_w+0.30T
-\]
+$
 
-where \(J_w\) is weighted phenotype similarity and \(T\) is temporal interval compatibility. A candidate pair must share at least two features represented by at least two system labels.
+where $J_w$ is weighted phenotype similarity and $T$ is temporal interval compatibility. A candidate pair must share at least two features represented by at least two system labels.
 
 The weights and candidate rule are transparent design choices for this prototype, not clinically validated thresholds.
 
@@ -118,11 +118,11 @@ The built-in dataset contains:
 - 50 illustrative feature observations
 - 13 broad system labels represented among the features
 
-Every profile and observation is fictional. The complete demonstration dataset is embedded in \`main.py\`, so the program does not need network access, external files, database credentials, or patient uploads.
+Every profile and observation is fictional. The complete demonstration dataset is embedded in `main.py`, so the program does not need network access, external files, database credentials, or patient uploads.
 
 ## Project structure
 
-\`\`\`text
+```text
 trdde-rare-disease-discovery/
 ├── .github/
 │   └── workflows/
@@ -136,13 +136,13 @@ trdde-rare-disease-discovery/
 ├── LICENSE
 ├── README.md
 └── main.py                 # Application, data, and analysis methods
-\`\`\`
+```
 
 ## Testing and continuous integration
 
 The test suite checks dataset integrity, expected demonstration-data dimensions, weighted Jaccard behavior, interval overlap, profile comparisons, candidate-generation rules, hypothesis status, report structure, and JSON export.
 
-A GitHub Actions workflow runs validation, tests, and an export check on pushes and pull requests targeting \`main\`. It checks Python 3.10 through 3.14. The workflow is a software-quality check; it does not validate biomedical assumptions or clinical usefulness.
+A GitHub Actions workflow runs validation, tests, and an export check on pushes and pull requests targeting `main`. It checks Python 3.10 through 3.14. The workflow is a software-quality check; it does not validate biomedical assumptions or clinical usefulness.
 
 ## Limitations and responsible use
 
