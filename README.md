@@ -87,9 +87,9 @@ Each fictional profile contains feature IDs and an illustrative onset-age interv
 
 Features that occur in fewer profiles receive higher cohort-relative weights. For profile feature sets $A$ and $B$, the weighted Jaccard score is:
 
-$
+$$
 J_w(A,B)=\frac{\sum_{f\in A\cap B}w_f}{\sum_{f\in A\cup B}w_f}
-$
+$$
 
 This measures weighted feature-set overlap in the supplied demonstration cohort. It is not a clinical importance score.
 
@@ -101,9 +101,9 @@ For each feature shared by a pair, the prototype checks whether the two illustra
 
 The current ranking combines the two quantities:
 
-$
+$$
 S=0.70J_w+0.30T
-$
+$$
 
 where $J_w$ is weighted phenotype similarity and $T$ is temporal interval compatibility. A candidate pair must share at least two features represented by at least two system labels.
 
