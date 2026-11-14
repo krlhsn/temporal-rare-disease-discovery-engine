@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/trdde-banner.svg" alt="TRDDE — Temporal Rare-Disease Discovery Engine" width="100%">
+  <img src="assets/trdde-banner.svg" alt="Abstract illustration of connected data points arranged along a timeline" width="100%">
 </p>
 
 <p align="center">
