@@ -1,66 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="bannerTitle bannerDesc">
-  <title id="bannerTitle">Abstract temporal data network</title>
-  <desc id="bannerDesc">A quiet, minimal scientific illustration of connected points arranged along a flowing timeline.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">TRDDE — Temporal Rare-Disease Discovery Engine</title>
+  <desc id="desc">A midnight-blue scientific banner with a connected multisystem figure and a temporal timeline motif.</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1424"/>
-      <stop offset="0.52" stop-color="#101e31"/>
-      <stop offset="1" stop-color="#0a1929"/>
-    </linearGradient>
-    <radialGradient id="ambientA"><stop offset="0" stop-color="#2c8d96" stop-opacity=".22"/><stop offset="1" stop-color="#2c8d96" stop-opacity="0"/></radialGradient>
-    <radialGradient id="ambientB"><stop offset="0" stop-color="#7770c9" stop-opacity=".18"/><stop offset="1" stop-color="#7770c9" stop-opacity="0"/></radialGradient>
-    <linearGradient id="timeline" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5fc6bb" stop-opacity=".12"/><stop offset=".3" stop-color="#72c9c4" stop-opacity=".78"/><stop offset=".7" stop-color="#9d9ae5" stop-opacity=".82"/><stop offset="1" stop-color="#9d9ae5" stop-opacity=".12"/>
-    </linearGradient>
-    <linearGradient id="linkA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#62c5b9" stop-opacity=".62"/><stop offset="1" stop-color="#8c91dc" stop-opacity=".46"/></linearGradient>
-    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="10"/></filter>
-    <filter id="nodeGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <pattern id="fineGrid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#9bb8c9" stroke-opacity=".035" stroke-width="1"/></pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101b31"/><stop offset=".56" stop-color="#172b43"/><stop offset="1" stop-color="#101d35"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#60c8bd" stop-opacity=".12"/><stop offset=".48" stop-color="#8dd9d1" stop-opacity=".9"/><stop offset="1" stop-color="#a99bf1" stop-opacity=".22"/></linearGradient>
+    <radialGradient id="halo"><stop offset="0" stop-color="#4e9caa" stop-opacity=".24"/><stop offset="1" stop-color="#4e9caa" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#d4e7ff" stroke-opacity=".04"/></pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-  <rect width="1200" height="420" rx="26" fill="url(#background)"/>
-  <rect width="1200" height="420" rx="26" fill="url(#fineGrid)"/>
-  <ellipse cx="790" cy="205" rx="390" ry="270" fill="url(#ambientA)"/>
-  <ellipse cx="1010" cy="150" rx="270" ry="230" fill="url(#ambientB)"/>
-  <g fill="none" stroke-linecap="round">
-    <path d="M76 300 C225 245 304 252 420 205 S645 124 790 170 S1001 257 1125 166" stroke="#5db9b2" stroke-opacity=".12" stroke-width="1.3"/>
-    <path d="M82 328 C240 282 328 285 452 238 S660 165 800 203 S1002 284 1110 215" stroke="#9b98dd" stroke-opacity=".13" stroke-width="1.2"/>
-    <path d="M105 102 C245 150 341 146 470 180 S699 260 850 230 S1031 139 1110 126" stroke="#7d9fbe" stroke-opacity=".1" stroke-width="1.2"/>
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/><rect width="1200" height="420" rx="28" fill="url(#grid)"/><circle cx="940" cy="207" r="235" fill="url(#halo)"/>
+  <path d="M0 356 C210 315 320 390 520 349 S870 306 1200 357" fill="none" stroke="#7c9eb8" stroke-opacity=".08" stroke-width="2"/><path d="M0 72 C215 110 340 43 520 77 S895 116 1200 65" fill="none" stroke="#7c9eb8" stroke-opacity=".07" stroke-width="2"/>
+  <g transform="translate(930 205)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle r="169" stroke="#8dbac6" stroke-opacity=".17" stroke-width="1.5"/><circle r="144" stroke="#a9a0ed" stroke-opacity=".26" stroke-width="1.4" stroke-dasharray="2 11"/><ellipse rx="188" ry="78" transform="rotate(-29)" stroke="#68c7bf" stroke-opacity=".36" stroke-width="1.7"/><ellipse rx="188" ry="78" transform="rotate(31)" stroke="#a99ae9" stroke-opacity=".25" stroke-width="1.5"/>
+    <circle cx="0" cy="-82" r="39" stroke="#d7e8ef" stroke-opacity=".82" stroke-width="5"/>
+    <path d="M-23 -44 C-34 -28 -45 -25 -65 -16 C-92 -4 -105 28 -112 111 M23 -44 C34 -28 45 -25 65 -16 C92 -4 105 28 112 111 M-23 -16 C-17 1 -14 12 -14 29 M23 -16 C17 1 14 12 14 29" stroke="#d7e8ef" stroke-opacity=".78" stroke-width="5"/><path d="M0 -16 L0 104" stroke="#7ccbc2" stroke-opacity=".48" stroke-width="2" stroke-dasharray="3 8"/><path d="M-77 38 Q0 7 77 38 M-94 82 Q0 51 94 82" stroke="#91a7c9" stroke-opacity=".32" stroke-width="2"/>
+    <g stroke="#75cfc3" stroke-opacity=".73" stroke-width="2.4"><path d="M-36 -67 L0 -43 L38 -69 M0 -43 L-43 4 L0 29 L45 3 L0 -43 M-43 4 L-66 54 L0 82 L66 54 L45 3"/><path d="M-36 -67 L-72 -40 M38 -69 L72 -40 M-66 54 L-78 92 M66 54 L78 92"/></g>
+    <g fill="#a9e9dc" stroke="#18384a" stroke-width="2" filter="url(#glow)"><circle cx="-36" cy="-67" r="7"/><circle cx="38" cy="-69" r="7"/><circle cx="0" cy="-43" r="8"/><circle cx="-43" cy="4" r="7"/><circle cx="45" cy="3" r="7"/><circle cx="0" cy="29" r="8"/><circle cx="-66" cy="54" r="6"/><circle cx="66" cy="54" r="6"/><circle cx="0" cy="82" r="7"/></g>
+    <g fill="#c9c1ff" stroke="#24304a" stroke-width="2" filter="url(#glow)"><circle cx="-72" cy="-40" r="5"/><circle cx="72" cy="-40" r="5"/><circle cx="-78" cy="92" r="5"/><circle cx="78" cy="92" r="5"/></g>
+    <path d="M-127 137 H127" stroke="url(#line)" stroke-width="3"/><g stroke="#b8ddd9" stroke-opacity=".75" stroke-width="2"><path d="M-104 128 V146 M-52 132 V142 M0 124 V150 M52 132 V142 M104 128 V146"/></g><g fill="#a9e9dc"><circle cx="-104" cy="137" r="4"/><circle cx="0" cy="137" r="5"/><circle cx="104" cy="137" r="4"/></g><circle cx="0" cy="137" r="13" stroke="#a9e9dc" stroke-opacity=".24" stroke-width="1.2"/>
   </g>
-  <path d="M104 221 C240 221 288 221 382 221 S560 221 665 221 S855 221 1092 221" fill="none" stroke="url(#timeline)" stroke-width="2.4" stroke-linecap="round"/>
-  <path d="M104 221 C240 221 288 221 382 221 S560 221 665 221 S855 221 1092 221" fill="none" stroke="#83d5ce" stroke-opacity=".16" stroke-width="13" filter="url(#softGlow)"/>
-  <g fill="none" stroke="url(#linkA)" stroke-width="1.45" stroke-linecap="round" opacity=".72">
-    <path d="M248 221 Q287 124 370 149 Q426 164 450 221"/>
-    <path d="M248 221 Q292 314 370 288 Q422 272 450 221"/>
-    <path d="M450 221 Q520 107 606 140 Q651 157 692 221"/>
-    <path d="M450 221 Q520 332 606 300 Q650 283 692 221"/>
-    <path d="M692 221 Q760 126 844 155 Q899 176 929 221"/>
-    <path d="M692 221 Q770 315 844 286 Q893 268 929 221"/>
-    <path d="M370 149 Q505 44 606 140" stroke-opacity=".35"/>
-    <path d="M370 288 Q505 375 606 300" stroke-opacity=".35"/>
-    <path d="M606 140 Q756 62 844 155" stroke-opacity=".32"/>
-    <path d="M606 300 Q756 365 844 286" stroke-opacity=".32"/>
-    <path d="M248 221 Q590 12 929 221" stroke-opacity=".18"/>
-    <path d="M248 221 Q590 410 929 221" stroke-opacity=".18"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="78" y="119" fill="#a7dcd5" font-size="17" font-weight="700" letter-spacing="4">RESEARCH EXPLORATION</text><text x="75" y="205" fill="#f4f7ff" font-size="82" font-weight="700" letter-spacing="3">TRDDE</text><rect x="82" y="229" width="585" height="4" rx="2" fill="#73cfc4"/>
+    <text x="82" y="278" fill="#e8f0fb" font-size="25" font-weight="600" letter-spacing=".5">Temporal Rare-Disease</text><text x="82" y="312" fill="#e8f0fb" font-size="25" font-weight="600" letter-spacing=".5">Discovery Engine</text><text x="83" y="350" fill="#b7cbdc" font-size="18">A new lens on patterns across time.</text>
+    <g transform="translate(82 371)"><rect width="142" height="34" rx="17" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".22"/><text x="71" y="22" text-anchor="middle" fill="#e8f5f4" font-size="12" font-weight="700" letter-spacing="1">PHENOTYPE</text><rect x="156" width="142" height="34" rx="17" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".22"/><text x="227" y="22" text-anchor="middle" fill="#e8f5f4" font-size="12" font-weight="700" letter-spacing="1">TIMELINE</text><rect x="312" width="142" height="34" rx="17" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".22"/><text x="383" y="22" text-anchor="middle" fill="#e8f5f4" font-size="12" font-weight="700" letter-spacing="1">DISCOVERY</text></g>
   </g>
-  <g fill="none" stroke-width="1.2">
-    <circle cx="370" cy="149" r="23" stroke="#77c9bd" stroke-opacity=".28"/>
-    <circle cx="370" cy="288" r="18" stroke="#77c9bd" stroke-opacity=".23"/>
-    <circle cx="606" cy="140" r="27" stroke="#8bbbc8" stroke-opacity=".28"/>
-    <circle cx="606" cy="300" r="21" stroke="#8bbbc8" stroke-opacity=".24"/>
-    <circle cx="844" cy="155" r="22" stroke="#aaa0e6" stroke-opacity=".28"/>
-    <circle cx="844" cy="286" r="26" stroke="#aaa0e6" stroke-opacity=".24"/>
-  </g>
-  <g fill="#a6ddd4" filter="url(#nodeGlow)"><circle cx="370" cy="149" r="4.5"/><circle cx="370" cy="288" r="3.7"/><circle cx="606" cy="140" r="4.4"/><circle cx="606" cy="300" r="3.8"/></g>
-  <g fill="#b7b0ed" filter="url(#nodeGlow)"><circle cx="844" cy="155" r="4.3"/><circle cx="844" cy="286" r="4.5"/></g>
-  <g>
-    <circle cx="248" cy="221" r="21" fill="#5abbb3" opacity=".12" filter="url(#softGlow)"/><circle cx="248" cy="221" r="7" fill="#a2e0d5"/>
-    <circle cx="450" cy="221" r="25" fill="#62c6bd" opacity=".13" filter="url(#softGlow)"/><circle cx="450" cy="221" r="8" fill="#a7e0d8"/>
-    <circle cx="692" cy="221" r="29" fill="#9a98e4" opacity=".14" filter="url(#softGlow)"/><circle cx="692" cy="221" r="9" fill="#d0cafa"/>
-    <circle cx="929" cy="221" r="22" fill="#a29ce6" opacity=".13" filter="url(#softGlow)"/><circle cx="929" cy="221" r="7" fill="#c7c1f1"/>
-  </g>
-  <g fill="#85b9c5" opacity=".66">
-    <circle cx="155" cy="167" r="2.2"/><circle cx="194" cy="270" r="1.8"/><circle cx="306" cy="95" r="2"/><circle cx="315" cy="350" r="2.1"/><circle cx="520" cy="82" r="1.8"/><circle cx="538" cy="354" r="2.1"/><circle cx="744" cy="83" r="2"/><circle cx="760" cy="351" r="1.8"/><circle cx="1010" cy="90" r="2"/><circle cx="1040" cy="302" r="2.2"/>
-  </g>
-  <g fill="#a6a0df" opacity=".58"><circle cx="1100" cy="160" r="2.1"/><circle cx="1085" cy="260" r="1.8"/><circle cx="965" cy="93" r="1.8"/><circle cx="980" cy="348" r="2"/></g>
-  <path d="M54 38H230 M54 38V86 M1146 382H970 M1146 382V334" fill="none" stroke="#91c8cb" stroke-opacity=".22" stroke-width="1.2"/>
 </svg>
