@@ -48,8 +48,9 @@ TRDDE is a small exploration of one question: can combining feature overlap with
 ---
 
 **Project:** [Temporal Rare-Disease Discovery Engine on GitHub](https://github.com/krlhsn/temporal-rare-disease-discovery-engine)
----
-**Course context:** Stanford Code in Place X, Fall 2026  
+
+**Course context:** Stanford Code in Place X, Fall 2026
+
 **Author:** Kamrul Hassan
----
+
 **Responsible use:** TRDDE is an educational research prototype, not a diagnostic, screening or clinical decision-support tool. No health or treatment decisions should be made using it.
