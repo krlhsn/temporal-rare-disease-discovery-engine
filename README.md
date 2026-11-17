@@ -25,6 +25,8 @@ The **Temporal Rare-Disease Discovery Engine (TRDDE)** is a research-exploration
 
 TRDDE represents observations as feature identifiers and onset-age intervals. It compares fictional profiles, ranks candidate overlaps, and turns selected patterns into structured research questions. The project is designed to make its assumptions and limitations visible rather than presenting exploratory scores as medical evidence.
 
+[Read the project story](PROJECT_STORY.md) — why timing matters alongside feature overlap, how the prototype works, and what its synthetic examples can and cannot show.
+
 ## What it does
 
 | Component | Purpose |
